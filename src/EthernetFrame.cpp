@@ -43,3 +43,43 @@ void EthernetFrame::fromBytes(const char* bytes)
 
 	setData(data);
 }
+
+char* EthernetFrame::getdata()
+{
+	return this->data;
+}
+
+void EthernetFrame::setData(const char* data)
+{
+	this->data = data;
+}
+
+unsigned long EthernetFrame::getType()
+{
+	return this->type;
+}
+
+void EthernetFrame::setType(const unsigned long type)
+{
+	this->type = type;
+}
+
+unsigned long EthernetFrame::getDestinationAddress()
+{
+	return this->destinationaddress;
+}
+
+void EthernetFrame::setDestinationAddress(const unsigned long destinationaddress)
+{
+	this->destinationaddress = destinationaddress;
+}
+
+unsigned long EthernetFrame::getSourceAddress()
+{
+	return this->sourceaddress;
+}
+
+void EthernetFrame::setSourceAddress(const unsigned long sourceaddress)
+{
+	this->sourceaddress = sourceaddress;
+}
